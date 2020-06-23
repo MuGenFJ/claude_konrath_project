@@ -1,3 +1,9 @@
+@font-face {
+    src: url(../fonts/EuroStyle\ Normal.ttf);
+    src: url(../fonts/EurostileBold.ttf);
+    font-family: eurostyle-normal;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +11,7 @@
 }
 
 html, body{
-    font-family: 'Roboto', sans-serif;
+    font-family: eurostyle-normal;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -22,9 +28,6 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
     z-index: 5;
     overflow: hidden;
 }
@@ -142,7 +145,6 @@ a{
     text-decoration: none;
     color: grey;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 #sidebar > ul > li > a:hover{
@@ -271,11 +273,6 @@ a{
     visibility: visible;
     transition: all .8s ease-in-out;
 }
-/* .nav-item-menu:hover .project-title{
-    opacity: 1;
-    visibility: visible;
-    transition: all .8s ease-in-out;
-} */
 
 .project-container{
     display: flex;
@@ -395,29 +392,6 @@ a{
     opacity: 1;
 }
 
-.project-img.a:hover{
-    /* transform: scale(1.1); */
-    transition: all .5s ease-in-out;
-}
-
-/* .project-title{
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    margin-left: 10px;
-    left: 0;
-    position: relative;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .8s ease-in-out;
-} */
-
-/* .project-title h4{
-    text-transform: uppercase;
-    color: rgb(34, 33, 110);
-} */
-
-
 .footer-container{
     display: flex;
     height: 100%;
@@ -477,7 +451,7 @@ section{
 .logo-page{
     text-align: center;
     margin-top: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 .logo-page a{
     color: rgb(34, 33, 110);
@@ -620,21 +594,6 @@ ul.filter-menu li span:hover {
       transition: all .5s ease-in-out;
 }
 
-/* .grid-item a {
-    display: block;
-    background-color: #fff;
-    max-width: 95%;
-    margin: 0 auto;
-    position: relative;
-    text-decoration: none;
-    text-align: center;
-} */
-/* @media (max-width: 380px){
-    .grid-item a {
-        max-width: 70%;
-    }
-} */
-
 .grid-item img {
 	max-width: 100%;
     display: block;
@@ -698,12 +657,6 @@ ul.filter-menu li span:hover {
     }
 }
 
-/* @media screen and (min-width:350px){
-    .information-container{
-        max-width: 90%;
-    }
-} */
-
 .information-container h3{
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -740,7 +693,14 @@ ul.filter-menu li span:hover {
     position: absolute;
     top: 45%;
     left: -8%;
+    font-size: 2rem;
     cursor: pointer;
+}
+@media (max-width: 420px){
+    .arrow-prev{
+        top: 45%;
+        left: -15%;
+    }
 }
 
 .arrow-next{
@@ -748,7 +708,14 @@ ul.filter-menu li span:hover {
     position: absolute;
     top: 45%;
     right: -7%;
+    font-size: 2rem;
     cursor: pointer;
+}
+@media (max-width: 420px){
+    .arrow-next{
+        top: 45%;
+        right: -15%;
+    }
 }
 
 .slick-track{
@@ -774,13 +741,10 @@ ul.filter-menu li span:hover {
     margin-top: 50px;
 }
 
-.redirection-btn a{
-    color: rgb(34, 33, 110);
-    font-size: 1.8rem;
+.redirection-btn img{
+    width: 30px;
+    height: auto;
 }
-
-  /*Realisation Section*/
-
 
   /*Contact Section*/
   .contact-box{
@@ -799,7 +763,6 @@ ul.filter-menu li span:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-left: 100px;
   }
 
@@ -815,7 +778,7 @@ ul.filter-menu li span:hover {
     color: rgb(34, 33, 110);
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 900;
+    font-family: eurostyle-bold;
     font-size: 1.8rem;
   }
 
@@ -827,22 +790,15 @@ ul.filter-menu li span:hover {
     margin-bottom: 20px;
   }
 
-  .info-contact{
-      margin: 10px 0;
-  }
-
   .info-contact span{
-      line-height: 40px;
-      font-size: .9rem;
-      display: inline-block;
-    }
-
-  .info-contact span i{
-    color: rgb(228, 228, 255);
-    font-size: 1.6rem;
-    margin-right: 5px;
-    margin-left: -35px;
+      display: block;
   }
+  
+  .info-contact span img{
+        width: 30px;
+        height: auto;
+        margin-right: 15px;
+    }
 
   .info-contact .email{
     text-decoration: none;
@@ -854,17 +810,15 @@ ul.filter-menu li span:hover {
       margin-top: 20px;
   }
 
-  .social-media-contact i{
-    color: white;
-    background: rgb(34, 33, 110);
-    padding: 5px 5px;
-    font-size: .6rem;
+  .social-media-contact img{
     opacity: .6;
+    width: 22px;
+    height: auto;
     transition: transform .2s ease;
     margin-right: 20px;
 }
 
-.social-media-contact i:hover{
+.social-media-contact img:hover{
     opacity: 1;
     -ms-transform: scale(1.3);
     -webkit-transform: scale(1.3);
@@ -969,8 +923,12 @@ ul.filter-menu li span:hover {
 
   .logo-location{
       position: absolute;
-      top: 44%;
-      left: 51%;
-      font-size: 3rem;
-      color: rgb(34, 33, 110) ;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .logo-location img{
+      width: 71px;
+      height: 82px;
   }

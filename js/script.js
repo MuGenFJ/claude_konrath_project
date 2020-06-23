@@ -34,8 +34,8 @@ $('.slider-area').slick({
 	speed: 300,
 	slidesToShow: 3.2,
 	slidesToScroll: 1,
-	prevArrow: '<span class="arrow-prev"><i class="fas fa-angle-double-left"></i></span>',
-	nextArrow: '<span class="arrow-next"><i class="fas fa-angle-double-right"></i></span>',
+	prevArrow: '<span class="arrow-prev"><i class="fas fa-chevron-left"></i></span>',
+	nextArrow: '<span class="arrow-next"><i class="fas fa-chevron-right"></i></span>',
 	responsive: [
 	  {
 		breakpoint: 1758,
