@@ -155,27 +155,27 @@ a{
 .nav-item .nav-link-effect:before{
     position: absolute;
     content: '';
-    height: 0;
-    width: 0;
+    height: 0px;
+    width: 0px;
     border: 2px solid transparent;
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0px;
     box-sizing: border-box;
 }
 
 .nav-item .nav-link-effect:after{
     position: absolute;
     content: '';
-    height: 0;
-    width: 0;
+    height: 0px;
+    width: 0px;
     border: 2px solid transparent;
-    top: 0%;
-    right: 0;
+    top: 0px;
+    right: 0px;
     box-sizing: border-box;
 }
 
 .nav-item .nav-link-effect:hover:before{
-    height: 28px;
+    height: 100%;
     width: 120%;
     left: -10%;
     border: 2px solid rgb(34, 33, 110);
@@ -186,7 +186,7 @@ a{
 }
 
 .nav-item .nav-link-effect:hover:after{
-    height: 28px;
+    height: 100%;
     width: 120%;
     right: -10%;
     border: 2px solid rgb(34, 33, 110);
