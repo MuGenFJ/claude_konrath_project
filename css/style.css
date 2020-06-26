@@ -168,7 +168,7 @@ a{
     content: '';
     height: 0;
     width: 0;
-    border: 1.5px solid transparent;
+    border: 2px solid transparent;
     top: 0%;
     right: 0;
     box-sizing: border-box;
@@ -178,7 +178,7 @@ a{
     height: 28px;
     width: 120%;
     left: -10%;
-    border: 1.5px solid rgb(34, 33, 110);
+    border: 2px solid rgb(34, 33, 110);
     border-right: none;
     border-bottom: none;
     transition: height .2s linear,
@@ -189,7 +189,7 @@ a{
     height: 28px;
     width: 120%;
     right: -10%;
-    border: 1.5px solid rgb(34, 33, 110);
+    border: 2px solid rgb(34, 33, 110);
     border-left: none;
     border-top: none;
     transition: height .2s linear,
