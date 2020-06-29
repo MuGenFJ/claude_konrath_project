@@ -30,6 +30,7 @@ a{
     position: absolute;
     z-index: 5;
     overflow: hidden;
+    transition: all .8s ease-in-out;
 }
 
 .header-container{
@@ -97,7 +98,7 @@ a{
     padding-left: 50px;
     padding-top: 80px;
     background: #fff;
-    transition: all 500ms ease;
+    transition: all .6s ease-in-out;
     font-family: sans-serif;
     z-index: 99;
 }
@@ -171,7 +172,7 @@ a{
 }
 
 .nav-item .nav-link-effect:hover:before{
-    height: 120%;
+    height: 100%;
     width: 120%;
     left: -10%;
     border: 2px solid rgb(34, 33, 110);
@@ -182,7 +183,7 @@ a{
 }
 
 .nav-item .nav-link-effect:hover:after{
-    height: 120%;
+    height: 100%;
     width: 120%;
     right: -10%;
     border: 2px solid rgb(34, 33, 110);
